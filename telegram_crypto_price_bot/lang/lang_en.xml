@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<translation>
+    <!-- Help command message -->
+    <sentence id="HELP_CMD">**HELP**
+Hi {name},
+welcome to the Telegram Price Bot.
+
+ℹ️ Here is the list of supported commands.
+
+🔘 **/help** : show this message
+🔘 **/alive** : show if bot is active
+🔘 **/pricebot_set_test_mode** __true/false__ : enable/disable test mode
+🔘 **/pricebot_is_test_mode** : show if test mode is enabled
+🔘 **/pricebot_version** : show bot version
+🔘 **/pricebot_get_single** __COIN_ID COIN_VS LAST_DAYS [SAME_MSG]__ : show chart and price information of the specified pair (single call)
+🔘 **/pricebot_task_start** __PERIOD_HOURS START_HOUR COIN_ID COIN_VS LAST_DAYS__ : start a price task in the current chat
+🔘 **/pricebot_task_stop** __COIN_ID COIN_VS__ : stop the specified price task in the current chat
+🔘 **/pricebot_task_stop_all** : stop all price tasks in the current chat
+🔘 **/pricebot_task_pause** __COIN_ID COIN_VS__ : pause the specified price task in the current chat
+🔘 **/pricebot_task_resume** __COIN_ID COIN_VS__ : resume the specified price task in the current chat
+🔘 **/pricebot_task_send_in_same_msg** __COIN_ID COIN_VS true/false__ : enable/disable sending chart and price information in the same message for the specified price task in the current chat
+🔘 **/pricebot_task_delete_last_msg** __COIN_ID COIN_VS true/false__ : enable/disable the deletion of last messages for the specified price task in the current chat
+🔘 **/pricebot_task_info** : show the list of active price tasks in the current chat
+
+Parameters in square brakets are optional.</sentence>
+    <!-- Alive command message -->
+    <sentence id="ALIVE_CMD">**STATUS**
+✅ The bot is alive.</sentence>
+
+    <!-- Set test mode command enabled message -->
+    <sentence id="SET_TEST_MODE_EN_CMD">**TEST MODE**
+✅ Test mode enabled.</sentence>
+    <!-- Set test mode command disabled message -->
+    <sentence id="SET_TEST_MODE_DIS_CMD">**TEST MODE**
+✅ Test mode disabled.</sentence>
+
+    <!-- Is test mode command enabled message -->
+    <sentence id="IS_TEST_MODE_EN_CMD">**TEST MODE**
+ℹ️ Test mode is currently enabled.</sentence>
+    <!-- Is test mode command disabled message -->
+    <sentence id="IS_TEST_MODE_DIS_CMD">**TEST MODE**
+ℹ️ Test mode is currently disabled.</sentence>
+
+    <!-- Version command message -->
+    <sentence id="VERSION_CMD">**Telegram Crypto Price Bot**
+
+Author: Tirth Motka (tirthpmotka@gmail.com)
+Version: **{version}**</sentence>
+
+    <!-- Start price task ok message -->
+    <sentence id="PRICE_TASK_START_OK_CMD">**TASK CONTROL**
+✅ Price task successfully started.
+
+Parameters:
+- Period: __{period}h__
+- Start: __{start:02d}:00__
+- Coin ID: __{coin_id}__
+- Coin VS: __{coin_vs}__
+- Last days: __{last_days}__</sentence>
+
+    <!-- Stop price task ok message -->
+    <sentence id="PRICE_TASK_STOP_OK_CMD">**TASK CONTROL**
+✅ Price task [{coin_id}, {coin_vs}] successfully stopped.</sentence>
+
+    <!-- Stop all price tasks message -->
+    <sentence id="PRICE_TASK_STOP_ALL_CMD">**TASK CONTROL**
+✅ All price tasks successfully stopped.</sentence>
+
+    <!-- Pause price task ok message -->
+    <sentence id="PRICE_TASK_PAUSE_OK_CMD">**TASK CONTROL**
+✅ Price task [{coin_id}, {coin_vs}] successfully paused.</sentence>
+
+    <!-- Resume price task ok message -->
+    <sentence id="PRICE_TASK_RESUME_OK_CMD">**TASK CONTROL**
+✅ Price task [{coin_id}, {coin_vs}] successfully resumed.</sentence>
+
+    <!-- Send in same message ok message -->
+    <sentence id="PRICE_TASK_SEND_IN_SAME_MSG_OK_CMD">**TASK CONTROL**
+✅ Price task [{coin_id}, {coin_vs}] send chart/price in the same message set to: {flag}.</sentence>
+
+    <!-- Delete last message ok message -->
+    <sentence id="PRICE_TASK_DELETE_LAST_MSG_OK_CMD">**TASK CONTROL**
+✅ Price task [{coin_id}, {coin_vs}] delete last message set to: {flag}.</sentence>
+
+    <!-- Price task info message -->
+    <sentence id="PRICE_TASK_INFO_CMD">**TASKS INFO**
+Number of active tasks in this chat: **{tasks_num}**
+Tasks list:
+{tasks_list}</sentence>
+    <!-- Price task info no task message -->
+    <sentence id="PRICE_TASK_INFO_NO_TASK_CMD">**TASKS INFO**
+No task is active in this chat.</sentence>
+
+    <!-- Bot welcome message -->
+    <sentence id="BOT_WELCOME_MSG">Hi!
+Thanks for choosing the **Telegram Crypto Price Bot**.
+Use __/help__ to see the list of supported commands.
+Do not forget to **make me administrator of the group** or I won't work properly.</sentence>
+
+    <!-- Generic error message -->
+    <sentence id="GENERIC_ERR_MSG">**ERROR**
+❌ An error occurred while executing command.</sentence>
+    <!-- Authorized-only users message -->
+    <sentence id="AUTH_ONLY_ERR_MSG">**ERROR**
+❌ You are not authorized to use the command.</sentence>
+    <!-- Group-only error message -->
+    <sentence id="GROUP_ONLY_ERR_MSG">**ERROR**
+❌ This command can be executed only in the chat group.</sentence>
+    <!-- API error message -->
+    <sentence id="API_ERR_MSG">**ERROR**
+❌ API error for coin {coin_id}/{coin_vs}, check network or coin ID.</sentence>
+    <!-- Parameter error message -->
+    <sentence id="PARAM_ERR_MSG">**ERROR**
+❌ Invalid parameters.</sentence>
+    <!-- Task already existent error message -->
+    <sentence id="TASK_EXISTENT_ERR_MSG">**ERROR**
+❌ Price task [{coin_id}, {coin_vs}] is already active in this chat. Stop the task to start a new one with the same coins again.</sentence>
+    <!-- Task not existent error message -->
+    <sentence id="TASK_NOT_EXISTENT_ERR_MSG">**ERROR**
+❌ Price task [{coin_id}, {coin_vs}] is not active in this chat.</sentence>
+    <!-- Task period error message -->
+    <sentence id="TASK_PERIOD_ERR_MSG">**ERROR**
+❌ Period shall be between 1 and 24.</sentence>
+    <sentence id="TASK_START_ERR_MSG">**ERROR**
+❌ Start hour shall be between 0 and 23.</sentence>
+    <!-- Maximum tasks error message -->
+    <sentence id="MAX_TASK_ERR_MSG">**ERROR**
+❌ Maximum number of tasks reached. Stop some tasks to start new ones.</sentence>
+    <!-- Single task information message -->
+    <sentence id="SINGLE_TASK_INFO_MSG">- Coin: __{coin_id}/{coin_vs}__, period: __{period}h__, start: __{start:02d}:00__, last days: __{last_days}__, state: __{state}__</sentence>
+    <!-- Task running message -->
+    <sentence id="TASK_RUNNING_MSG">runnnig</sentence>
+    <!-- Task paused message -->
+    <sentence id="TASK_PAUSED_MSG">paused</sentence>
+    <!-- Price info title message -->
+    <sentence id="PRICE_INFO_TITLE_MSG">**{coin_name} - Price Info**\n</sentence>
+    <!-- Chart info title message -->
+    <sentence id="CHART_INFO_TITLE_MSG">{coin_id}/{coin_vs} - Price of last {last_days} day(s)</sentence>
+</translation>
