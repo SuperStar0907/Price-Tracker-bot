@@ -113,12 +113,12 @@ Set task so that it doesn't delete the last sent message:
 ## Image Examples
 
 Example with chart and price information on different messages:
+![example_diff_msg](https://github.com/SuperStar0907/Price-Tracker-bot/assets/74975220/818739ca-f1c3-49ca-9dd3-cb7bcbf4cffc)
 
-<img src="./img/example_diff_msg.png" width="500px">
 
 Example with chart and price information on the same message:
+![example_same_msg](https://github.com/SuperStar0907/Price-Tracker-bot/assets/74975220/378253a7-47c4-455e-b931-36c0609a199e)
 
-<img src="./img/example_same_msg.png" width="500px">
 
 # License
 
